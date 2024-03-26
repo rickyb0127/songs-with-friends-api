@@ -68,6 +68,7 @@ export const scoreGuess = async (guessInput: GuessInputFields) => {
 
     if (!isRoundOver) {
       const playerGuess = guessInput.guessString.toLowerCase();
+      console.log(`player: ${guessInput.playerId} guessed: ${playerGuess}`);
 
       const acceptedSongNames = currentGame.playlist[index].acceptedSongNames;
       const acceptedArtistNames =
